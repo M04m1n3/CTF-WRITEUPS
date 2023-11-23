@@ -158,6 +158,7 @@ first u need to create two accounts:
 ![](screenshots/888.png)
 
 then send negative amount from account to another we notice that the server logic try to take the amount from u like:
+
 `ur_bugs = ur_bugs - transfered_bugs
 so when transfered_bugs is negative we got
 ur_bugs = ur_bugs - (-transfered_bugs)
