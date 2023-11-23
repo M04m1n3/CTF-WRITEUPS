@@ -56,7 +56,7 @@ createChalls()
 
 ![](screenshots/333.png)
 
-###NOSqli:
+### NOSqli:
 the first thing that comes in my mind after seeing mongoDB is trying noSQLinjection so i tried:
 
 ![](screenshots/444.png)
@@ -107,6 +107,7 @@ while True:
                 print("INTIGRITI{"+challenge_flag)
 ```
 and we got it:
+
 ```bash
 ┌──(mo㉿ElMo)-[~/Documents/CTF/web-writeup]
 └─$ python3 sol.py
