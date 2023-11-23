@@ -134,5 +134,41 @@ INTIGRITI{h0w_1s_7h4t_PAWSIBLE
 INTIGRITI{h0w_1s_7h4t_PAWSIBLE}
 ```
 
+##  Bug Bank 
 
+
+### Info
+
+![](screenshots/666.png)
+
+
+![](screenshots/3333.png)
+
+this one i solved it after the ctf ended 
+at first i was trying some things related to graphQL and for some reasons i reached nothing:
+
+![](screenshots/4444.png)
+
+until i tried randomly transfering random numbers till i got something (unintended solution but please check intigrity official writeups for the intended one)  :
+
+## solution:
+first u need to create two accounts:
+![](screenshots/777.png)
+
+![](screenshots/888.png)
+
+then send negative amount from account to another we notice that the server logic try to take the amount from u like:
+`ur_bugs = ur_bugs - transfered_bugs
+so when transfered_bugs is negative we got
+ur_bugs = ur_bugs - (-transfered_bugs)
+`
+
+![](screenshots/999.png)
+
+![](screenshots/5555.png)
+
+then we can get the flag easily:
+![](screenshots/1111.png)
+
+![](screenshots/2222.png)
 
