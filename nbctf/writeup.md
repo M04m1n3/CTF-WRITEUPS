@@ -117,7 +117,7 @@ also after checking the docker file :
 
 `COPY flag.txt /tmp/flag.txt`
 
-so our payload should be simple and not a file upload to get a RCE XD
+so our payload should be simple path traversal and not a file upload XD
 
 ```bash
 ┌──(mo㉿ElMo)-[~/Documents/CTF/nbctf]
