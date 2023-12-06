@@ -10,7 +10,7 @@
 
 
 
-##solution:
+## solution:
 
 After analysing the code source we realise that the app use Sql database it creates tables: crystals and  flag that contains the flag
 
@@ -74,7 +74,7 @@ i spent in this challenge like three hours trying to get RCE using file upload s
 
 but then i decided to read the code source again 
 
-##solution:
+## solution:
 
 here the `check_file_path` function does not really filter the query `file` which we have full control of it
 
