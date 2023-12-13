@@ -36,7 +36,7 @@ Just check the html source code and search for ping{
 
 after reading the description the first thing to try is changing some http headers
 so i just searched for user agents for Internet Explorer and i found `Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko`
-and then replac `Windows` with `linux`  `Mozilla/5.0 (linux NT 6.1; Trident/7.0; rv:11.0) like Gecko`
+and then replace `Windows` with `linux`  `Mozilla/5.0 (linux NT 6.1; Trident/7.0; rv:11.0) like Gecko`
 
 
 ![](screenshots/P3.png)
@@ -161,7 +161,7 @@ return solutionPath === "/flag";`,
 ```
 
 for the first one the payload :
-`soluion=/robot/../flag/.`
+`solution=/robot/../flag/.`
 
 second:
 `solution=/flag/./` or `solution=/robot/..././flag/.`
@@ -187,7 +187,7 @@ after sending the last solution we get the flag
 
 ## solution:
 
-it's values from fibanocci sequence we have to get the order of each number in the fib 
+it's values from fibonacci sequence we have to get the order of each number in the fib 
 the order represent the ascci:
 
 
