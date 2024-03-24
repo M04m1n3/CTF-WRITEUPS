@@ -9,7 +9,7 @@
 
 ![](screenshots/4.png)
 
-##solution:
+## solution:
 
 First this when we click in login as guest we can see that a jwt is generated in a url param:
 
@@ -66,7 +66,7 @@ the flag:
 
 
 
-###jalyboy-jalygirl:
+### jalyboy-jalygirl:
 
 this challenge had a really easy solution but i spent 2 hours to find it 
 
