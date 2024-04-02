@@ -5,7 +5,7 @@
 
 ### Info
 
-       ![](screenshots/1.png)
+![](screenshots/1.png)
 
 
 ## solution:
@@ -66,13 +66,15 @@ def process_range_request(ranges, content_type, file_len, write_header, write_by
 
 ### Second step: Understand the Code And the Range header:
 
-so we leaked the server code and it's so long but only 3 sections i found importants the first lines:
+so we leaked the server code and it's so long but only 3 sections i found importants 
+the first lines:
 ```
 with open("/setup/flag.txt") as f:
     the_flag = f.read()
 os.remove("/setup/flag.txt")
 ```
 the lines that explain how the Range header works in the function `def process_range_request(ranges, content_type, file_len, write_header, write_bytes, write_file_range)` 
+
 the last lines:
 
 ```
