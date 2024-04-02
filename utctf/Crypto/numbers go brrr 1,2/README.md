@@ -10,7 +10,7 @@
  first challenge was basically just generate a random seed (can be brutforced) then genereate am AES key using this seed with a  function  so the solution is to bruteforce the seed to get the exact seed that generate the exact AES key since the seed doesnt change in the session so:
  
 ```python
-#utflag{deep_seated_and_recurring_self-doubts}
+
 #!/usr/bin/env python3
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad, pad
@@ -37,6 +37,7 @@ for i in range(1000000):
     if b'utflag{'in flag:
     	print(flag)
     	break
+#utflag{deep_seated_and_recurring_self-doubts}
 ```
   
 ## numbers go brrr2
@@ -75,6 +76,48 @@ for i in range(1000000):
         	print("Here is your guessed key:",key)
                 
         	break
-
+```bash
+┌──(mo㉿ElMo)-[~]
+└─$  nc guppy.utctf.live 2435 
+Thanks for using our encryption service! To get the start guessing, type 1. To encrypt a message, type 2.
+You will need to guess the key (you get 250 guesses for one key). You will do this 3 times!
+Find the key 1 of 3!
+What would you like to do (1 - guess the key, 2 - encrypt a message)?
+2
+What is your message?
+amine
+Here is your encrypted message: 17656f38f79524df2c26220af11c59c1
+What would you like to do (1 - guess the key, 2 - encrypt a message)?
+1
+You have 250 guesses to find the key!
+What is your guess (in hex)?
+dfc61f9fcf0bdf9ba24f9ff32f9aa117
+You found the key!
+Find the key 2 of 3!
+What would you like to do (1 - guess the key, 2 - encrypt a message)?
+2
+What is your message?
+amine
+Here is your encrypted message: 2514e0250765cb0d15185727b374d3b0
+What would you like to do (1 - guess the key, 2 - encrypt a message)?
+1
+You have 250 guesses to find the key!
+What is your guess (in hex)?
+6aa2a89a7097c6cbde7f9d8bd58f328c
+You found the key!
+Find the key 3 of 3!
+What would you like to do (1 - guess the key, 2 - encrypt a message)?
+2
+What is your message?
+amine
+Here is your encrypted message: a2b6b74de98ceec4c36e251049338f7d
+What would you like to do (1 - guess the key, 2 - encrypt a message)?
+1
+You have 250 guesses to find the key!
+What is your guess (in hex)?
+e47cae35a57fda060a3fda1129a70492
+You found the key!
+Here is the flag: utflag{ok_you_are_either_really_lucky_or_you_solved_it_as_intended_yay}
+```
 
 
