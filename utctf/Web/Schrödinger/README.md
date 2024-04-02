@@ -14,7 +14,7 @@ this One was a lil easy to solve because i saw this vulnerabilty before so it's 
 
 we can try to upload php shell or whatever bur it doesnt work because the website  `unzip zip files and show the output of files`
 
-it's just using this script to create a file named for exemple `evil_symlink` that have a symbolic link to the `/etc/passwd` file and zip it 
+it's just using this [script](https://github.com/stark0de/zip-symlink-payload-creator) to create a file named for exemple `evil_symlink` that have a symbolic link to the `/etc/passwd` file and zip it 
 ```python
 import zipfile
 
