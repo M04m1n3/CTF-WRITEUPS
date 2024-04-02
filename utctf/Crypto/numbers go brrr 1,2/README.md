@@ -74,8 +74,9 @@ for i in range(1000000):
     if(ciphertext==c):
     	
         	print("Here is your guessed key:",key)
-                
+             
         	break
+```
 ```bash
 ┌──(mo㉿ElMo)-[~]
 └─$  nc guppy.utctf.live 2435 
