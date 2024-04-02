@@ -15,7 +15,9 @@ there is i think 3 steps to solve the challenge:
 
 ### First step: Path Traversal:
 
-so the description said that `I wrote a custom HTTP server to play with obscure HTTP headers.` and trying to request the home page , we will notice that the server is a simple python httpserver `Server: BaseHTTP/0.6 Python/3.12.2`
+so the description said that `I wrote a custom HTTP server to play with obscure HTTP headers.` and trying to request the home page , we will notice that the server is a simple python httpserver `Server: 
+BaseHTTP/0.6 Python/3.12.2`
+
 ![](screenshots/2.png)
 
 we can see there is a `hello.html` file actually this file doesn't matter but trying to request it will give us an http header called `Accept-Ranges` you can find [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Ranges) more information about it ,because we will need it later!
